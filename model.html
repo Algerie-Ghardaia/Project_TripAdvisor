@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="./assets/js/index.js"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style1.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1 style="text-align: center;margin-top: 10px;font-size: 30px;">Create Account</h1>
+        
+      <form class="form" id="form">
+        <div class="form_control">
+          <label for="">First Name</label>
+          <input type="text" placeholder="first name" id="first_name" />
+        </div>
+        <div class="form_control">
+          <label for="">Last Name</label>
+          <input type="text" placeholder="last name" id="last_name" />
+        </div>
+        <div class="form_control">
+          <label for="">Email</label>
+          <input type="email" placeholder="email" id="email" />
+        </div>
+        <div class="textarea">
+          <label for="">Message</label>
+          <textarea type="text"  id="message" ></textarea>
+        </div>
+        <button style="margin-bottom: 20px;">Submit</button>
+        <p><a href="#" style="margin-left: 90px;">Login to your account?</a></p>
+        <p id="succes" class="hiden" style="color: rgb(255, 255, 255);text-align: center;font-size: 33px;padding-top: 150px;">SUCCES</p>
+      </form>
+    </div>
+  </body>
+</html>

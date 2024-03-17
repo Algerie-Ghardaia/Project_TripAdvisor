@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripAdvisor</title>
+    <script src="./assets/js/index.js"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/5a12a0e239.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <i id="screen_small" class="fa-solid fa-bars"></i>
+        <img
+          id="screen_small"
+          src="./assets/imgs/Tripadvisor_logo.svg"
+          alt=""
+        />
+        <div id="screen_small">
+          <i
+            style="margin-right: 20px"
+            class="fa-solid fa-magnifying-glass"
+          ></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <img
+          id="screen_small_img"
+          src="./assets/imgs/Tripadvisor_logo.svg"
+          alt=""
+        />
+        <div class="burger-menu">
+          <nav class="navigation-header">
+            <a href="http://www.google.fr">
+              <span>
+                <i style="margin-right: 15px" class="fa-solid fa-pen"></i>
+              </span>
+              Avis
+            </a>
+            <a href="">
+              <span>
+                <i style="margin-right: 15px" class="fa-solid fa-bell"></i>
+              </span>
+              Alertes
+            </a>
+            <a href="">
+              <span>
+                <i style="margin-right: 15px" class="fa-solid fa-heart"></i>
+              </span>
+              Favoris
+            </a>
+            <button id="connection" href><div><a  href="/model.html">Connectez vous</a></div></button>
+            <a href="">
+              <span>
+                <i
+                  style="margin-right: 15px"
+                  class="fa-solid fa-cart-shopping"
+                ></i>
+              </span>
+              Panier
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <h1>
+        <span>Explorez</span>
+        Chartres
+      </h1>
+      <nav class="navigation-tache">
+        <div>
+          <span>Hotel</span
+          ><i class="fa-solid fa-hotel" style="font-size: 30px"></i>
+        </div>
+        <div>
+          <span>Location de vacances</span>
+          <i class="fa-solid fa-house" style="font-size: 30px"></i>
+        </div>
+        <div>
+          <span>Forum de voyage </span>
+          <i class="fa-solid fa-comment" style="font-size: 27px"></i>
+        </div>
+        <div>
+          <span>Vols</span>
+          <i class="fa-solid fa-regular fa-plane" style="font-size: 30px"></i>
+        </div>
+        <div>
+          <span>Plus </span>
+          <i class="fa-solid fa-ellipsis" style="font-size: 30px"></i>
+        </div>
+        <div>
+          <span>Restaurants </span>
+          <i class="fa-solid fa-utensils" style="font-size: 30px"></i>
+        </div>
+        <div>
+          <span>Croisieres </span>
+          <i class="fa-solid fa-ferry" style="font-size: 30px"></i>
+        </div>
+        <div>
+          <span>Vacances </span>
+          <i class="fa-solid fa-house-chimney" style="font-size: 30px"></i>
+        </div>
+      </nav>
+      <section class="pictures-bloc">
+        <div class="left-bloc">
+          <img
+            src="./assets/imgs/vue-ville-chartres-iStock-Leonid-Andronov.jpg"
+            alt=""
+          />
+        </div>
+        <div class="right-bloc">
+          <div>
+            <img
+              src="./assets/imgs/csm_cathedrale-chartres-place-chatelet-1-1_ea77d8c480.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/imgs/csm_portail-nord-1-CHartres-en-lumieres-_6682e5c6db.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="seconde-section">
+        <div class="city-desc">
+          <h2>La plus belle ville du monde :</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt
+            ab magni perspiciatis velit quos animi dicta molestiae voluptate
+            autem repudiandae, omnis labore natus expedita corporis minima
+            aperiam. Deserunt, rerum?
+          </p>
+        </div>
+        <div class="bloc-map" id="bloc-map">
+          <div class="map-text">
+            <h2>La cathedrale de Chartres</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae porro animi ut. Neque laboriosam velit est enim
+              officiis quod, reprehenderit eum quae rerum illum, aliquam vero
+              impedit excepturi soluta deleniti.
+            </p>
+            <button>Créez un voyage</button>
+          </div>
+          <div class="map-img"></div>
+        </div>
+      </section>
+      <section class="third-section">
+        <h3>Chartres : Les immanquables</h3>
+        <div class="third-section-main">
+          <div class="third-desc">
+            <h4>Se divertir</h4>
+            <p>
+              Des lieux à voir, des rues à explorer et des expériences
+              emblématiques.
+            </p>
+            <p class="link">Tout afficher</p>
+          </div>
+          <div class="third-caroussel">
+            <div class="small">
+              <div class="relativ-div">
+                <img src="./assets/imgs/image.png" alt="photo-capitole" />
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </div>
+              <h5>La Nature</h5>
+              <div class="ratings">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+            <div>
+              <div class="relativ-div">
+                <img src="./assets/imgs/image 2.png" alt="photo-capitole" />
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </div>
+              <h5>Les rurales</h5>
+              <div class="ratings">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+            <div>
+              <div class="relativ-div">
+                <img src="./assets/imgs/image3.png" alt="photo-capitole" />
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </div>
+              <h5>Climat</h5>
+              <div class="ratings">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+            <div>
+              <div class="relativ-div">
+                <img
+                  src="./assets/imgs/se divertir4.jpeg"
+                  alt="photo-capitole"
+                />
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </div>
+              <h5>Cathedrale</h5>
+              <div class="ratings">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+            <div>
+              <div class="relativ-div">
+                <img
+                  src="./assets/imgs/vue-ville-chartres-iStock-Leonid-Andronov.jpg"
+                  alt="photo-capitole"
+                />
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </div>
+              <h5>LE Reacteur</h5>
+              <div class="ratings">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="third-section-main">
+          <div class="third-desc">
+            <h4>Se reposer</h4>
+            <p>Un mélange de charme, de modernité et de valeurs sûres.</p>
+            <p class="link">Tout afficher</p>
+          </div>
+          <div class="third-caroussel">
+            <div>
+              <div class="relativ-div">
+                <img src="./assets/imgs/hotel1.jpeg" alt="photo-capitole" />
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </div>
+              <h5>Grand Monarque Hotel & Spa</h5>
+              <div class="ratings">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+            <div>
+              <div class="relativ-div">
+                <img src="./assets/imgs/hotel3.jpeg" alt="photo-capitole" />
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </div>
+              <h5>B&B HOTEL Chartres Oceane</h5>
+              <div class="ratings">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+            <div>
+              <div class="relativ-div">
+                <img src="./assets/imgs/hetelB&b.jpeg" alt="photo-capitole" />
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </div>
+              <h5>Hotel Premiere Classe Chartres Barjouville</h5>
+              <div class="ratings">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+            <div>
+              <div class="relativ-div">
+                <img
+                  src="./assets/imgs/csm_portail-nord-1-CHartres-en-lumieres-_6682e5c6db.jpg"
+                  alt="photo-capitole"
+                />
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </div>
+              <h5>Le capitole</h5>
+              <div class="ratings">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+            <div>
+              <div class="relativ-div">
+                <img
+                  src="./assets/imgs/vue-ville-chartres-iStock-Leonid-Andronov.jpg"
+                  alt="photo-capitole"
+                />
+                <i class="fa-regular fa-heart heart-icon"></i>
+              </div>
+              <h5>Le capitole</h5>
+              <div class="ratings">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <p>
+                Tours et plateformes d'observation, Monuments & Points d'intérêt
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <i class="fa-solid fa-fire" style="font-size: 20px"></i>
+        Made at <a href="#">Le Reacteur</a> by <a href="#">Mohammed-Amine</a>
+      </p>
+    </footer>
+  </body>
+</html>
